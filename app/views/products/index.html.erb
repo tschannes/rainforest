@@ -1,0 +1,13 @@
+<h1>Products#index</h1>
+<% @products.each do |product| %>
+	  <div class="front">
+	  <%= product[:name] %></br>
+	  	<%= product[:description] %></br>
+	  	<%= product[:price_in_cents] %>
+	  	<a href="<%=  edit_product_path(product) %>">edit product</a>
+	  	<%= link_to 'Destroy', product_path(product),
+	  	method: :delete, data: { confirm: 'Are you sure?' } %>
+	  	
+	</div>
+	<hr>
+<% end %>

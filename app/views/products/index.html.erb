@@ -4,9 +4,13 @@
 	  <%= product[:name] %></br>
 	  	<%= product[:description] %></br>
 	  	<%= product.formatted_price + " Dollars" %>
+	  	<%= link_to 'Show', product_path(product) %>
+	  	<% if current_user %>
 	  	<a href="<%=  edit_product_path(product) %>">edit product</a>
 	  	<%= link_to 'Destroy', product_path(product),
 	  	method: :delete, data: { confirm: 'Are you sure?' } %>
+	  	<% end %>
+
 	  	
 	</div>
 	<hr>

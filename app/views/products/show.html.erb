@@ -3,8 +3,6 @@
 <%= @product.formatted_price + " Dollars" %>
 <%= link_to 'Back', products_path %>
 
-<% if current_user %>
-
   <h3>Reviews</h3>
 
   <% @product.reviews.each do |review| %>
@@ -17,6 +15,8 @@
       <% end %>
     </p>
   <% end %>
+
+<% if current_user %>
   <h4>New Review</h4>
 
   <%= render 'reviews/form' %>

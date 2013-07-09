@@ -3,7 +3,8 @@
 	  <div class="front">
 	  	<%= product[:name] %></br>
 	  	<%= product[:description] %></br>
-	  	<%= product.formatted_price + " Dollars" %>
+	  	<%= product.formatted_price + " Dollars" %></br>
+	  	<%= product.reviews.all.count.to_s + " Reviews" %></br>
 	  	<%= link_to 'Show', product_path(product) %>
 	  	
 	  	<% if current_user %>

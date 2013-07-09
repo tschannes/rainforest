@@ -8,5 +8,4 @@ Rainforest::Application.routes.draw do
   resources :users #, :only => [:new, :create, :update, :show, :update]
   resources :sessions, :only => [:new, :create, :destroy]
 
-  
 end

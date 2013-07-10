@@ -3,7 +3,7 @@
 	  <div class="front">
 	  	<h3><%= product[:name] %></h3>
 	  	<%= product[:description] %></br>
-	  	<%= product.category.inspect %></br>
+	  	in: <%= product.category.description %></br>
 	  	<%= product.formatted_price + " Dollars" %></br>
 	  	<%= product.reviews.all.count.to_s + " Reviews" %></br>
 	  	<%= link_to 'Show', product_path(product) %>

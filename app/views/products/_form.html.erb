@@ -18,7 +18,6 @@
     <%= f.label "category" %><br>
     <%= f.collection_select :category_id, Category.all, :id, :description %>
   </p>
-   
   </p>
   <p>
     <%= submit_tag "Save", id: "submit", class: "button" %>

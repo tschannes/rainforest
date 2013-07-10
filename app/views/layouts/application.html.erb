@@ -27,7 +27,7 @@
   <ul class="title-area">
     <!-- Title Area -->
     <li class="name">
-      <h1><a href="#">Rainforest </a></h1>
+      <h1><%= link_to "Rainforest", root_path %></h1>
     </li>
     <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
   </ul>
@@ -38,10 +38,13 @@
       <li class="divider"></li>
       <li><%= link_to "New Product", new_product_path %></li>
       <li class="divider"></li>
+      <li><%= link_to "New Category", new_category_path %></a>
+      </li>
+      <li class="divider"></li>
       <li><%= link_to "All Products", products_path %></a>
       </li>
       <li class="divider"></li>
-      <li><%= link_to "Create Category", new_category_path %></a>
+      <li><%= link_to "All Categories", categories_path %></a>
       </li>
       <li class="divider"></li>
     </ul>

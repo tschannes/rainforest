@@ -35,6 +35,7 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'rails-i18n'
 
 gem 'zurb-foundation'
 

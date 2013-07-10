@@ -1,8 +1,9 @@
 <h1>All Products</h1>
 <% @products.each do |product| %>
 	  <div class="front">
-	  	<%= product[:name] %></br>
+	  	<h3><%= product[:name] %></h3>
 	  	<%= product[:description] %></br>
+	  	<%= product.category.inspect %></br>
 	  	<%= product.formatted_price + " Dollars" %></br>
 	  	<%= product.reviews.all.count.to_s + " Reviews" %></br>
 	  	<%= link_to 'Show', product_path(product) %>

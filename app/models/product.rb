@@ -8,8 +8,8 @@ class Product < ActiveRecord::Base
     sprintf("%.2f", price_in_dollars)
   end
   
-  has_many :cats
-  has_many :reviews, :through => :cats
+  belongs_to :category
+  #has_many :reviews, :through => :cats
 
   has_many :reviews
   has_many :users, :through => :reviews

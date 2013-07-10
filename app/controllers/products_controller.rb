@@ -40,6 +40,7 @@ class ProductsController < ApplicationController
   def create
     params.permit!
     @product = Product.new(params[:product])
+    
 
     respond_to do |format|
       if @product.save

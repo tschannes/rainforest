@@ -1,1 +1,2 @@
+Deployed:
 This exercise is deployes at http://blooming-castle-5994.herokuapp.com/
